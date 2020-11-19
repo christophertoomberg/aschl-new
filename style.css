@@ -17,10 +17,16 @@
     margin-bottom: .3rm;
 }
 
-.section-statement .showcase-img{
+.section-statement .showcase-img {
     position: relative;
     max-width: 110%;
     margin: 3rem auto 3rem;
+}
+
+.section-c .showcase-img{
+    position: relative;
+    max-width: 110%;
+    margin: .3rem auto .1rem;
 }
 
 .section-b label{
@@ -33,5 +39,9 @@
 }
 
 button:hover{
+    background: #00ca46;
+}
+
+.section-showcase a:hover {
     background: #00ca46;
 }
