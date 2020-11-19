@@ -1,0 +1,37 @@
+.section{
+    padding: 8rem 0 7;
+    text-align: center;
+}
+
+.section-heading,
+.section-description{
+    margin-bottom:1.2rem;
+}
+
+.section-a .fa{
+    font-size: 30px;
+    margin-bottom: .5rem;
+}
+
+.section-a h5{
+    margin-bottom: .3rm;
+}
+
+.section-statement .showcase-img{
+    position: relative;
+    max-width: 110%;
+    margin: 3rem auto 3rem;
+}
+
+.section-b label{
+    text-align: left;
+}
+
+.section-img img {
+    position: relative;
+    max-width: 40%;
+}
+
+button:hover{
+    background: #00ca46;
+}
