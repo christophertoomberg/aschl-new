@@ -1,3 +1,8 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
 .section{
     padding: 8rem 0 7;
     text-align: center;
@@ -15,6 +20,15 @@
 
 .section-a h5{
     margin-bottom: .3rm;
+}
+
+.section-a a {
+    color: black;
+    text-decoration: none;
+}
+
+.section-a nav{
+    scroll-behavior: smooth;
 }
 
 .section-statement .showcase-img {
