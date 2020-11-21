@@ -43,7 +43,6 @@
     margin: .3rem auto .1rem;
 }
 
-
 .section-b label{
     text-align: left;
 }
@@ -57,6 +56,16 @@ button:hover{
     background: #00ca46;
 }
 
-.section-showcase a:hover {
+.section-showcase a:hover, .section-statement a:hover {
     background: #00ca46;
 }
+
+.section-d ul{
+    text-align: left;
+}
+
+.section-d .row.row2 img, .section-d .row.row6 img, .section-d .row.row7 img{
+    margin: 10rem -10rem 0;
+}
+
+

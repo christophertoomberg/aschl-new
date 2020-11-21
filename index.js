@@ -1,9 +1,8 @@
-let phrases = ['IT for a better environment.','Recycling management and compliance.', 'Organic materials processing.', 'Compost plant management and reporting.', 'Agricultural materials recycling.'];
+let phrases = ['IT for a better environment','Recycling management and compliance', 'Organic materials processing', 'Compost plant management and reporting', 'Agricultural materials recycling'];
 document.getElementById('typing').textContent = '|';
 
 let letterIndex = 0;
 let phraseIndex = 0;
-let isDeleting = false;
 
 async function type() {
     //Writing a phrase.
@@ -25,7 +24,7 @@ async function type() {
         letterIndex = 0;
         phraseIndex++;
     }
-    setTimeout(type, 80);
+    setTimeout(type, 60);
 }
 
 function sleep(ms) {
