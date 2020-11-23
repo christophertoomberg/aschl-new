@@ -68,4 +68,10 @@ button:hover{
     margin: 10rem -10rem 0;
 }
 
+.section-b .column2 h5 {
+    text-align: left;
+}
 
+.navbar{
+    display: none;
+}
