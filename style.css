@@ -62,6 +62,7 @@ button:hover{
 
 .section-d ul{
     text-align: left;
+    list-style-position: outside;
 }
 
 .section-d .row.row2 img, .section-d .row.row6 img, .section-d .row.row7 img{
