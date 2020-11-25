@@ -22,8 +22,10 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-  <!-- CSS
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">  <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="style.css">
 
@@ -35,6 +37,11 @@
 
 <body>
  
+  <!--Back to top button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-arrow-up"></i>
+    Back to top</button>
+
   <!--SECTION-IMG-->
   <section class="section section-img">
     <div class="container">
@@ -50,8 +57,8 @@
         <h4><strong>Aschl Management Systems</strong></h4>
         <h5 id="typing">IT for a better environment.</h5>
       </div>
-      <a class="button" href="#contact">Contact</a>
       <a class="button" href="about.html">About us</a>
+      <a class="button" href="#contact">Contact</a>
       <a class="button" href="http://aschl.com/login" target="_blank">Client login <i
           class="fa fa-external-link-alt"></i></a>
     </div>
@@ -327,30 +334,34 @@
               </label>
               <button type="submit" value="Submit">Submit</button>
             </div>
-            <div class="six columns column2">
+
+            <div class="six columns column2 ">
               <h3>Contact</h3>
               <h5>
                 <strong>
                   Phone:
                 </strong>
-                +43 (0)7248-65488
+                + <span class="numbers">
+                  43 (0)7248-65488
+                </span> 
               </h5>
               <h5>
                 <strong>
                   Email:
                 </strong>
-                j.aschl@aschl.com
+                info@aschl.com
               </h5>
-              <h5>
+              <h5 id="address-info">
                 <strong>
                   Address:
                 </strong>
-                A 4707 Schluesslberg, Thal 1, Austria
+                <span class="numbers">A-4707</span>
+                 Schluesslberg, Thal 1, Austria
               </h5>
               
             </div>
           </div>
-          
+        
         </form>
       </div>
     </div>
@@ -360,7 +371,7 @@
 
   <footer style="text-align: center;">
     <p>Copyright &copy; Aschl Management Systems. All rights reserved.</p>
-    <p>A 4707 Schluesslberg, Thal 1, Austria, Phone: +43 (0)7248-65488</p>
+    <p>A-<span class="numbers">4707</span>  Schluesslberg, Thal 1, Austria, Phone: <span class="numbers">+43 (0)7248-65488</span></p>
     <a href="legal.html">Legal</a>
   </footer>
 

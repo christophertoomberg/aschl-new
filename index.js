@@ -1,4 +1,4 @@
-let phrases = ['IT for a better environment','Recycling management and compliance', 'Organic materials processing', 'Compost plant management and reporting', 'Agricultural materials recycling'];
+let phrases = ['IT for a Better Environment','Recycling Management and Compliance', 'Organic Materials Processing', 'Compost Plant Management and Reporting', 'Agricultural Materials Recycling'];
 document.getElementById('typing').textContent = '';
 
 let letterIndex = 0;
@@ -32,3 +32,23 @@ function sleep(ms) {
   }
   
 type();
+
+//Get the button:
+let myButton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    myButton.style.display = "block";
+  } else {
+    myButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
