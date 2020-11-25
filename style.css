@@ -69,9 +69,6 @@ button:hover{
     margin: 10rem -10rem 0;
 }
 
-.section-b .column2 h5, .section-b .column2 h3 {
-    text-align: left;
-}
 
 
 
@@ -107,3 +104,40 @@ button:hover{
     font-family: 'Quicksand', sans-serif;
   }
   
+  footer {
+      text-align: center;
+      line-height: 0.1em;
+  }
+
+  footer a {
+      padding-bottom: 2em;
+  }
+
+  @media(min-width:100px) {
+      .section-b .column2{
+        padding-left: 0em;
+    }
+
+    .section-b .column2 h5, .section-b .column2 h3 {
+        text-align: left;
+    }
+
+    footer {
+        text-align: center;
+        line-height: 1em;
+    }
+  }
+
+  @media(min-width:1000px) {
+    .section-b .column2{
+        padding-left: 4em;
+    }
+
+    .section-b .column2 h5, .section-b .column2 h3 {
+        text-align: left;
+        white-space: nowrap;
+    }
+    
+  }
+  
+
