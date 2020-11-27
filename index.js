@@ -1,4 +1,4 @@
-let phrases = ['IT for a Better Environment','Recycling Management and Compliance', 'Organic Materials Processing', 'Compost Plant Management and Reporting', 'Agricultural Materials Recycling'];
+let phrases = ['Software for a Better Environment','Recycling Management and Compliance', 'Organic Materials Processing', 'Compost Plant Management and Reporting', 'Agricultural Materials Recycling'];
 document.getElementById('typing').textContent = '';
 
 let letterIndex = 0;

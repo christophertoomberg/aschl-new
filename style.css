@@ -137,7 +137,8 @@ button:hover{
         text-align: left;
         white-space: nowrap;
     }
-    
   }
-  
 
+  .section-a.about-us,.section-a.priv-pol {
+      padding-top: 3em;
+  }
