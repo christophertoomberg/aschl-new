@@ -142,3 +142,7 @@ button:hover{
   .section-a.about-us,.section-a.priv-pol {
       padding-top: 3em;
   }
+
+.section-a.priv-pol p{
+    font-size: larger;
+  }
