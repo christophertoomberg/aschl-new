@@ -162,7 +162,7 @@ button:hover{
   #status.error {
       background-color: rgb(250, 129, 92);
       color: white;
-      animation: status 4s ease forwards;
+      /*animation: status 4s ease forwards;*/
   }
 
   @keyframes status {
