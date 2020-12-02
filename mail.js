@@ -8,7 +8,12 @@ async function sendMail() {
         method: 'POST',
         mode: 'cors',
         headers: {
-            'Access-Control-Allow-Origin' : '*'
+            'Access-Control-Allow-Origin' : '*',
+            'Content-Type' : 'application/json',
+            'Accept' : '*/*',
+            'Accept-Encoding' : 'gzip, deflate, br',
+            'Connection' : 'keep-alive'
+
         },
         body: {'fullName': fullName, 'clientEmail': clientEmail, 'phone': phone, 'message': message}
     });
