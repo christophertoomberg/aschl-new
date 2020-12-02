@@ -22,10 +22,11 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">  <!-- CSS
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="style.css">
 
@@ -34,12 +35,13 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
- 
+
   <!--Back to top button-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa fa-chevron-up"></i> To top</button>
-  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-chevron-up"></i> To top</button>
+
 
   <!--SECTION-IMG-->
   <section class="section section-img">
@@ -48,23 +50,23 @@
     </div>
   </section>
 
-<!-- SECTION-SHOWCASE -->
-<section class="section section-showcase">
-  <div class="container">
-    <div class="row" style="margin-top: 5%">
-      <div class="two-half column">
-        <h4><strong> <span style="font-size: larger;">Aschl</span> Management Systems</strong></h4>
-        <h5 id="typing">Software for a better environment.</h5>
+  <!-- SECTION-SHOWCASE -->
+  <section class="section section-showcase">
+    <div class="container">
+      <div class="row" style="margin-top: 5%">
+        <div class="two-half column">
+          <h4><strong> <span style="font-size: larger;">Aschl</span> Management Systems</strong></h4>
+          <h5 id="typing">Software for a better environment.</h5>
+        </div>
+        <a class="button" href="about.html">About us</a>
+        <a class="button" href="#contact">Contact</a>
+        <a class="button" href="http://aschl.com/login" target="_blank">Client login <i
+            class="fa fa-external-link-alt"></i></a>
       </div>
-      <a class="button" href="about.html">About us</a>
-      <a class="button" href="#contact">Contact</a>
-      <a class="button" href="http://aschl.com/login" target="_blank">Client login <i
-          class="fa fa-external-link-alt"></i></a>
     </div>
-  </div>
-</section>
+  </section>
 
-  
+
   <hr>
 
   <!--SECTION-STATEMENT-->
@@ -75,7 +77,8 @@
         <div class="one-half column">
           <h5>We provide a comprehensive system for record keeping, inventory, inbound and outbound reporting, cost
             control, business management, sales and marketing and proof of regulatory compliance. <br> For recycling
-            management, organic materials processing and all types of commercial composting, soil blend and substrate production.
+            management, organic materials processing and all types of commercial composting, soil blend and substrate
+            production.
           </h5>
           <a href="#learn-more" class="button">Read more</a>
         </div>
@@ -307,74 +310,77 @@
 
   <hr>
 
-  <!--SECTION-B-->
-  <section class="section section-b">
-    <div class="container">
-      <div class="row" id="contact">
-        <h2><strong>Interested?</strong></h2>
-        <h5>Please use the form and email us, or call as shown.</h5>
-        <form>
-          <div class="row">
-            <div class="six columns">
-              <label for="exampleEmailInput">Full name</label>
-              <input class="u-full-width" type="text" id="exampleNameInput">
+    <!--SECTION-B-->
+    <section class="section section-b">
+      <div class="container">
+        <div class="row" id="contact">
+          <h2><strong>Interested?</strong></h2>
+          <h5>Please use the form and email us, or call as shown.</h5>
+          <!--Add method="POST" later-->
+            <div class="row">
+              <div class="six columns">
+                <div id="status"></div>
 
-              <label for="exampleEmailInput">Your email</label>
-              <input class="u-full-width" type="email" id="exampleEmailInput">
+                <label for="Full name">Full name*</label>
+                <input class="u-full-width" type="text" id="full-name">
+  
+                <label for="Email">Your email*</label>
+                <input class="u-full-width" type="email" id="client-email">
+  
+                <label for="Phone">Your phone (include area code)*</label>
+                <input class="u-full-width" type="number" id="phone">
+  
+                <label for="Message">Message*</label>
+                <textarea class="u-full-width" id="message">
 
-              <label for="exampleEmailInput">Your phone (include area code)</label>
-              <input class="u-full-width" type="number" id="examplePhoneInput">
+                </textarea>
+                <button onclick="sendMail()">Submit</button>
+              </div>
 
-              <label for="exampleMessage">Message</label>
-              <textarea class="u-full-width" id="exampleMessage"></textarea>
-              <label class="example-send-yourself-copy">
-                <input type="checkbox">
-                <span class="label-body">Send a copy to yourself</span>
-              </label>
-              <button type="submit" value="Submit">Submit</button>
+  
+              <div class="six columns column2 ">
+                <h3>Contact</h3>
+                <h5>
+                  <strong>
+                    Phone:
+                  </strong>
+                  + <span class="numbers">
+                    43 (0)7248-65488
+                  </span> 
+                </h5>
+                <h5>
+                  <strong>
+                    Email:
+                  </strong>
+                  info@aschl.com
+                </h5>
+                <h5 id="address-info">
+                  <strong>
+                    Address:
+                  </strong>
+                  <span class="numbers">A-4707</span>
+                   Schluesslberg, Thal 1, Austria
+                </h5>
+                
+              </div>
             </div>
-
-            <div class="six columns column2 ">
-              <h3>Contact</h3>
-              <h5>
-                <strong>
-                  Phone:
-                </strong>
-                + <span class="numbers">
-                  43 (0)7248-65488
-                </span> 
-              </h5>
-              <h5>
-                <strong>
-                  Email:
-                </strong>
-                info@aschl.com
-              </h5>
-              <h5 id="address-info">
-                <strong>
-                  Address:
-                </strong>
-                <span class="numbers">A-4707</span>
-                 Schluesslberg, Thal 1, Austria
-              </h5>
-              
-            </div>
-          </div>
-        
-        </form>
+          
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <hr>
 
   <footer>
     <p>Copyright &copy; Aschl Management Systems. All rights reserved.</p>
-    <p>A-<span class="numbers">4707</span>Schluesslberg, Thal 1, Austria, Phone: <span class="numbers">+43 (0)7248-65488</span></p>
+    <p>A-<span class="numbers">4707</span>Schluesslberg, Thal 1, Austria, Phone: <span class="numbers">+43
+        (0)7248-65488</span></p>
     <a href="legal.html">Privacy Policy</a>
   </footer>
 
-  <script src="index.js"></script>
-</body>
 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="mail.js"></script>
 </html>
