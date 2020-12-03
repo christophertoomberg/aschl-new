@@ -16,7 +16,7 @@ async function sendMail() {
             },
             body: JSON.stringify({fullName: fullName.value.trim(), clientEmail: clientEmail.value.trim(), phone: phone.value.trim(), message: message.value.trim()})
         });
-        if (response.status === 200) {
+        if (response.status === 200) {        
             fullName.value = '';
             clientEmail.value = '';
             phone.value = '';
