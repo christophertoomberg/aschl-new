@@ -26,7 +26,6 @@ async function sendMail() {
             status.textContent = 'Thank you for contacting us!';
         } else if (response.status == 400) {
             const data = await response.json();
-            console.log(data);
             status.classList.add('error');
             status.innerHTML = '';
             data.errors.forEach(errorMessage => {
