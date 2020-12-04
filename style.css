@@ -197,3 +197,9 @@ button:hover{
           pointer-events: none;
       }
   }
+
+  #loader{
+      display: none;
+      position: relative;
+      max-width: 15%;
+  }

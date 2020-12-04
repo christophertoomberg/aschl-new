@@ -5,7 +5,11 @@ async function sendMail() {
     const message = document.getElementById('message');
 
     let status = document.getElementById('status');
+    let button = document.getElementById('submit');
+    let loader = document.getElementById('loader');
 
+    button.style.display = 'none';
+    loader.style.display = 'inline';
     try {
         const response = await fetch('https://aschl-mail.herokuapp.com/send', {
             method: 'POST',
@@ -16,7 +20,12 @@ async function sendMail() {
             },
             body: JSON.stringify({fullName: fullName.value.trim(), clientEmail: clientEmail.value.trim(), phone: phone.value.trim(), message: message.value.trim()})
         });
-        if (response.status === 200) {        
+        if (response.status === 200) {
+            
+            // Show button, hide loader.
+            button.style.display = 'inline';
+            loader.style.display = 'none';
+
             fullName.value = '';
             clientEmail.value = '';
             phone.value = '';
@@ -25,7 +34,14 @@ async function sendMail() {
             status.classList.add('success');
             status.textContent = 'Thank you for contacting us!';
         } else if (response.status == 400) {
+            
+            // Show button, hide loader.
+            button.style.display = 'inline';
+            loader.style.display = 'none';
+
             const data = await response.json();
+
+            status.classList.remove('success');
             status.classList.add('error');
             status.innerHTML = '';
             data.errors.forEach(errorMessage => {
@@ -34,6 +50,11 @@ async function sendMail() {
             });
         }
     } catch (error) {
+
+        // Show button, hide loader.
+        button.style.display = 'inline';
+        loader.style.display = 'none';
+
         console.log(error);
     }
 }
