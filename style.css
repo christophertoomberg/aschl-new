@@ -145,6 +145,7 @@ button:hover{
   @media(min-width:1000px) {
     .section-b .column2{
         padding-left: 4em;
+        padding-top: 1em;
     }
 
     .section-b .column2 h5, .section-b .column2 h3 {
