@@ -6,22 +6,29 @@ async function sendMail() {
     const message = document.getElementById('message');
     const sendCopy = document.getElementById('send-copy');
 
-    let status = document.getElementById('status');
     let button = document.getElementById('submit');
     let loader = document.getElementById('loader');
+    let status = document.getElementById('status');
 
-    // Clear the classes.
+    let eFullName = document.getElementById('eFullName');
+    let eEmail = document.getElementById('eEmail');
+    let ePhone = document.getElementById('ePhone');
+    let eMessage = document.getElementById('eMessage');
+
+    eFullName.textContent = '';
+    eEmail.textContent = '';
+    ePhone.textContent = '';
+    eMessage.textContent = '';
+
     if (status.classList.contains('success')) {
         status.classList.remove('success');
-    }
-    if (status.classList.contains('error')) {
-        status.classList.remove('error');
+        status.innerText = '';
     }
 
     // Hide the button and display the loader until we get a response.
     button.style.display = 'none';
     loader.style.display = 'inline';
-    
+
     try {
         const response = await fetch('https://aschl-mail.herokuapp.com/send', {
             method: 'POST',
@@ -46,9 +53,9 @@ async function sendMail() {
             message.value = '';
             sendCopy.checked = false;
 
-            // Add correct classes.
             status.classList.add('success');
-            status.textContent = 'Thank you for contacting us!';
+            status.innerText = 'Thank you for contacting us!'
+
         } else if (response.status == 400) {
 
             // Show button, hide loader.
@@ -57,13 +64,21 @@ async function sendMail() {
 
             // In case of an error, we get a response back.
             const data = await response.json();
-
-            // Display errors.
-            status.classList.add('error');
-            status.innerHTML = '';
+            console.log(data)
+            
+            // Display errors in placeholders.
             data.errors.forEach(errorMessage => {
-                const eMessage = errorMessage.msg;
-                status.innerHTML += eMessage + '<br>'
+                const prm = errorMessage.param;
+                const eMsg = errorMessage.msg;
+                if (prm === 'fullName') {
+                    eFullName.textContent = eMsg;
+                } else if (prm === 'clientEmail') {
+                    eEmail.textContent = eMsg;
+                } else if (prm === 'phone') {
+                    ePhone.textContent = eMsg;
+                } else if (prm === 'message') {
+                    eMessage.textContent = eMsg;
+                }
             });
         }
     } catch (error) {
@@ -75,3 +90,4 @@ async function sendMail() {
         console.log(error);
     }
 }
+

@@ -71,6 +71,7 @@ button:hover{
 .section-d .row.row2 img, .section-d .row.row6 img, .section-d .row.row7 img{
     margin: 10rem -10rem 0;
 }
+ 
 
 #button {
     display: inline-block;
@@ -176,9 +177,8 @@ button:hover{
       animation: status 4s ease forwards;
   }
 
-  #status.error {
-      background-color: rgb(250, 129, 92);
-      color: white;
+  .input-error {
+      color: rgb(250, 129, 92);
   }
 
   @keyframes status {
@@ -214,3 +214,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+.error-class::-webkit-input-placeholder {
+    color: rgb(250, 129, 92);
+ }

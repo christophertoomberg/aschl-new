@@ -22,12 +22,9 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> 
-     <!-- CSS
-
-
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@800&display=swap" rel="stylesheet">
+  <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="style.css">
 
@@ -38,92 +35,94 @@
 </head>
 
 <body>
-       <!--SECTION-B-->
-       <div class="section-a about-us">
-        <div class="container">
-            <div class="row">
-               
-                    <section class="section section-b">
-                        <div class="container">
-                          <div class="row" id="contact">
-                            <div class="two-half column">
-                                <a href="index.html">
-                                    <h3>
-                                        <i class="fa fa-long-arrow-left"></i> Aschl Management Systems
-                                    </h3>
-                                </a>
-                            <h5>Please use the form and email us, or call as shown.</h5>
-                              <div class="row">
-                                <div class="six columns">
-                                  
-                                  <div id="status"></div>
-                  
-                                  <form>
-                                    <label for="Full name">Full name*</label>
-                                    <input class="u-full-width" type="text" id="full-name">
-                      
-                                    <label for="Email">Your email*</label>
-                                    <input class="u-full-width" type="email" id="client-email">
-                      
-                                    <label for="Phone">Your phone (include area code)*</label>
-                                    <input class="u-full-width" type="number" id="phone">
-                      
-                                    <label for="Message">Message*</label>
-                                    <textarea class="u-full-width" id="message">
-                    
-                                    </textarea>
-                                    <label class="example-send-yourself-copy">
-                                      <input type="checkbox" id="send-copy">
-                                      <span class="label-body">Send a copy to yourself</span>
-                                    </label>
-                                  </form>
-                                 
-                                  <button onclick="sendMail()" id="submit">Submit</button>
-                                  <img src="images/loading.gif" alt="Loading spinner" id="loader">
-                                </div>
-                    
-                                <div class="six columns column2 ">
-                                  <h3>Contact</h3>
-                                  <h5>
-                                    <strong>
-                                      Phone:
-                                    </strong>
-                                    + <span class="numbers">
-                                      43 (0)7248-65488
-                                    </span> 
-                                  </h5>
-                                  <h5>
-                                    <strong>
-                                      Email:
-                                    </strong>
-                                    info@aschl.com
-                                  </h5>
-                                  <h5 id="address-info">
-                                    <strong>
-                                      Address:
-                                    </strong>
-                                    <span class="numbers">A-4707</span>
-                                     Schluesslberg, Thal 1, Austria
-                                  </h5>
-                                  
-                                </div>
-                              </div>
-                            
-                          </div>
-                        </div>
-                      </section>
-                 
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
 
-    <footer style="text-align: center;">
-        <p>Copyright &copy; Aschl Management Systems. All rights reserved.</p>
-        <p>A-<span class="numbers">4707</span> Schluesslberg, Thal <span class="numbers">1</span>, Austria; Phone: <span class="numbers">+43 (0)7248-65488</span></p>
-      </footer>
+  <!--Back to top/home button-->
+  <a href="index.html" id="button" class="show" style="text-decoration: none;"></a>
+
+  <!--SECTION-B-->
+  <div class="section-a about-us">
+    <div class="container">
+      <div class="row">
+        <section class="section section-b">
+          <div class="container">
+            <div class="row" id="contact">
+              <div class="four column">
+                <a href="index.html" style="text-align: left;">
+                  <h3>
+                    <i class="fa fa-long-arrow-left"></i>
+                    &nbsp; Aschl Management Systems
+                  </h3>
+                </a>
+                <h5 style="text-align: left;">Please use the form and email us, or call as shown.</h5>
+                <div class="row">
+                  <div class="six columns">
+                    <div id="status"></div>
+                      <label for="Full name">Full name*</label>
+                      <label id="eFullName" class="input-error"></label>
+                      <input required class="u-full-width" type="text" id="full-name">
+
+                      <label for="Email">Your email*</label>
+                      <label id="eEmail" class="input-error"></label>
+                      <input class="u-full-width" type="email" id="client-email">
+
+                      <label for="Phone">Your phone (include area code)*</label>
+                      <label id="ePhone" class="input-error"></label>
+                      <input class="u-full-width" type="number" id="phone">
+
+                      <label for="Message">Message*</label>
+                      <label id="eMessage" class="input-error"></label>
+                      <textarea class="u-full-width" id="message"></textarea>
+                      <label class="example-send-yourself-copy">
+                        <input type="checkbox" id="send-copy">
+                        <span class="label-body">Send a copy to yourself</span>
+                      </label>
+
+                    <button onclick="sendMail()" id="submit">Submit</button>
+                    <img src="images/loading.gif" alt="Loading spinner" id="loader">
+                  </div>
+
+                  <div class="six columns column2 ">
+                    <h3>Contact</h3>
+                    <h5>
+                      <strong>
+                        Phone:
+                      </strong>
+                      + <span class="numbers">
+                        43 (0)7248-65488
+                      </span>
+                    </h5>
+                    <h5>
+                      <strong>
+                        Email:
+                      </strong>
+                      info@aschl.com
+                    </h5>
+                    <h5 id="address-info">
+                      <strong>
+                        Address:
+                      </strong>
+                      <h5>
+                        <span class="numbers">A-4707</span>
+                        Schluesslberg, Thal 1, Austria
+                      </h5>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  </div>
+  <hr>
+
+  <footer style="text-align: center;">
+    <p>Copyright &copy; Aschl Management Systems. All rights reserved.</p>
+    <p>A-<span class="numbers">4707</span> Schluesslberg, Thal <span class="numbers">1</span>, Austria; Phone: <span
+        class="numbers">+43 (0)7248-65488</span></p>
+  </footer>
 </body>
 <script src="mail.js"></script>
+
 </html>
