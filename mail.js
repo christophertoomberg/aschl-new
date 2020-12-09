@@ -86,7 +86,6 @@ async function sendMail() {
         // Show button, hide loader.
         button.style.display = 'inline';
         loader.style.display = 'none';
-
         console.log(error);
     }
 }

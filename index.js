@@ -7,10 +7,9 @@ phraseHolder.textContent = '|';
 async function type() {
   let i = 0;
   while (true) {
-    //phraseHolder.classList.toggle('unfade');
     if (i < phrases.length) {
       phraseHolder.textContent = phrases[i];
-      await sleep(3000);
+      await sleep(2000);
       i++;
     } else {
       i = 0;
@@ -18,13 +17,12 @@ async function type() {
   }
 }
 
-
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-type();
 
+// Top up button.
 var btn = $('#button');
 
 $(window).scroll(function () {
@@ -40,3 +38,4 @@ btn.on('click', function (e) {
   $('html, body').animate({ scrollTop: 0 }, '100');
 });
 
+type();

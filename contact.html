@@ -54,21 +54,25 @@
                 <div class="row">
                   <div class="six columns">
                     <div id="status"></div>
-                      <label for="Full name">Full name*</label>
+
+                      <!-- Error messages as red outlines of inputs-->
                       <label id="eFullName" class="input-error"></label>
-                      <input required class="u-full-width" type="text" id="full-name">
+                      <input placeholder="Full name*" class="u-full-width" type="text" id="full-name">
+                      
+                      <label id="eJobTitle" class="input-error"></label>
+                      <input placeholder="Job title" class="u-full-width" type="text" id="job-title">
 
-                      <label for="Email">Your email*</label>
+                      <label id="eOrganization" class="input-error"></label>
+                      <input placeholder="Organization" class="u-full-width" type="text" id="organization">
+
                       <label id="eEmail" class="input-error"></label>
-                      <input class="u-full-width" type="email" id="client-email">
+                      <input placeholder="Email*" class="u-full-width" type="email" id="client-email">
 
-                      <label for="Phone">Your phone (include area code)*</label>
                       <label id="ePhone" class="input-error"></label>
-                      <input class="u-full-width" type="number" id="phone">
+                      <input placeholder="Phone*" class="u-full-width" type="number" id="phone">
 
-                      <label for="Message">Message*</label>
                       <label id="eMessage" class="input-error"></label>
-                      <textarea class="u-full-width" id="message"></textarea>
+                      <textarea placeholder="Message*" class="u-full-width" id="message"></textarea>
                       <label class="example-send-yourself-copy">
                         <input type="checkbox" id="send-copy">
                         <span class="label-body">Send a copy to yourself</span>
@@ -88,7 +92,6 @@
                         + <span class="numbers">
                           43 (0)7248-65488
                         </span>  
-                      
                     </h5>
                     <h5 id="email-info">
                       <strong>
@@ -104,7 +107,6 @@
                       <br>
                         <span class="numbers">A-4707</span>
                         Schluesslberg, Thal 1, Austria
-                      
                     </h5>
                   </div>
                 </div>
@@ -118,11 +120,12 @@
   <hr>
 
   <footer style="text-align: center;">
-    <p>Copyright &copy; Aschl Management Systems. All rights reserved.</p>
+    <p>&copy; Copyright <span id="year"></span> Aschl Management Systems. All rights reserved.</p>
     <p>A-<span class="numbers">4707</span> Schluesslberg, Thal <span class="numbers">1</span>, Austria; Phone: <span
         class="numbers">+43 (0)7248-65488</span></p>
   </footer>
 </body>
 <script src="mail.js"></script>
+<script src="crYear.js"></script>
 
 </html>

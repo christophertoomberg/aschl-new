@@ -166,12 +166,14 @@
     <div class="container">
       <div class="row">
         <div class="two-half column" id="learn-more">
-          <h2 id="test">Track and trace materials, audit trail.</h2>
-          <h5>
+
+          <!--Reduce text size dynamically on smaller screen resolutions.-->
+          <h4 id="test">Track and trace materials, audit trail.</h4>
+          <h7>
             We find ways to make complex processes and information easy and uncomplicated.
             Track where your feedstocks come from, which finished products and customers they go to, and back from the
             customers to the feedstocks used.
-          </h5>
+          </h7>
         </div>
       </div>
       <div class="row">
@@ -227,8 +229,9 @@
         <div class="one-half-column" id="easy-data-collection">
           <h3>Easy data collection</h3>
           <h5>
-            Record all feedstock, finished product, activities and measurements. <br>
-            Automatically import data from computerized scales ad other equipment, tablets or cell phones.
+            Record all feedstock, finished product, activities and measurements.
+            Automatically import data from computerized scales ad other equipment, 
+            tablets or cell phones.
           </h5>
         </div>
       </div>
@@ -301,7 +304,7 @@
       <hr>
 
       <div class="row">
-        <div class=  "one-half column">
+        <div class="one-half column">
           <img src="images/explainers/8.png" alt="8" class="showcase-img">
         </div>
         <div class="one-half column" id="env-cli">
@@ -316,7 +319,8 @@
 
   <hr>
   <footer>
-    <p>Copyright &copy; Aschl Management Systems. All rights reserved.</p>
+    <!--Add copyright year.-->
+    <p>&copy; Copyright <span id="year"></span> Aschl Management Systems. All rights reserved.</p>
     <p>A-<span class="numbers">4707</span>Schluesslberg, Thal 1, Austria, Phone: <span class="numbers">+43
         (0)7248-65488</span></p>
     <a href="legal.html">Privacy Policy</a>
@@ -326,4 +330,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="index.js"></script>
+<script src="crYear.js"></script>
 </html>
