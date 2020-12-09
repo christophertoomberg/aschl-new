@@ -7,11 +7,10 @@ phraseHolder.textContent = '|';
 async function type() {
   let i = 0;
   while (true) {
-    // fade in
-    await sleep(1000); // wait for some time
-    // fade out
+    //phraseHolder.classList.toggle('unfade');
     if (i < phrases.length) {
       phraseHolder.textContent = phrases[i];
+      await sleep(3000);
       i++;
     } else {
       i = 0;
