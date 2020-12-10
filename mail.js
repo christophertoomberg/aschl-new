@@ -5,6 +5,8 @@ async function sendMail() {
     const phone = document.getElementById('phone');
     const message = document.getElementById('message');
     const sendCopy = document.getElementById('send-copy');
+    const jobTitle = document.getElementById('job-title');
+    const organization = document.getElementById('organization');
 
     let button = document.getElementById('submit');
     let loader = document.getElementById('loader');
@@ -37,7 +39,8 @@ async function sendMail() {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ fullName: fullName.value.trim(), clientEmail: clientEmail.value.trim(), phone: phone.value.trim(), message: message.value.trim(), sendCopy: sendCopy.checked })
+            // If job title and organization aren't empty send their value.
+            body: JSON.stringify({ fullName: fullName.value.trim(), clientEmail: clientEmail.value.trim(), phone: phone.value.trim(), message: message.value.trim(), sendCopy: sendCopy.checked, jobTitle: jobTitle.value.trim(), organization: organization.value.trim()})
         });
 
         if (response.status === 200) {
