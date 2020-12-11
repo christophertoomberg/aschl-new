@@ -13,6 +13,7 @@ async function type() {
       i++;
     } else {
       i = 0;
+      continue;
     }
   }
 }
