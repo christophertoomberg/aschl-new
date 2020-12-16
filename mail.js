@@ -54,6 +54,8 @@ async function sendMail() {
             clientEmail.value = '';
             phone.value = '';
             message.value = '';
+            jobTitle.value = '';
+            organization.value = '';
             sendCopy.checked = false;
 
             status.classList.add('success');
@@ -90,6 +92,14 @@ async function sendMail() {
         button.style.display = 'inline';
         loader.style.display = 'none';
         console.log(error);
+
+        // Clear the form.
+        fullName.value = '';
+        clientEmail.value = '';
+        phone.value = '';
+        message.value = '';
+        jobTitle.value = '';
+        organization.value = '';
+        sendCopy.checked = false;
     }
 }
-
