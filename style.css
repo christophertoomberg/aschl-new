@@ -229,7 +229,7 @@ textarea:focus {
     box-shadow: 0 0 3px #00ca46;
 }
 
-input[type=textarea] {
+#message {
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;
