@@ -159,7 +159,7 @@ footer a {
     .section-b .column2 {
         padding-left: 0em;
     }
-    .section-b .column2 h5, .section-b .column2 h3 {
+    .section-b .column2 h5, .section-b .column2 p {
         text-align: left;
     }
     footer {
@@ -173,7 +173,7 @@ footer a {
         padding-left: 4em;
         padding-top: 1em;
     }
-    .section-b .column2 h5, .section-b .column2 h3 {
+    .section-b .column2 h5, .section-b .column2 p {
         text-align: left;
         white-space: nowrap;
     }
