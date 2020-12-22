@@ -16,7 +16,7 @@
     margin-bottom: .5rem;
 }
 
-.section-a h5 {
+.section-a h5, .section-a p {
     margin-bottom: .3rm;
 }
 
@@ -29,16 +29,30 @@
     scroll-behavior: smooth;
 }
 
+.section-a p {
+    font-size: larger;
+}
+
 .section-statement .showcase-img {
     position: relative;
-    max-width: 110%;
+    max-width: 90%;
     margin: 3rem auto 3rem;
+}
+
+#statement-text {
+    text-align: center;
+    padding-top: 4em;
+    font-size: larger;
 }
 
 .section-c .showcase-img {
     position: relative;
-    max-width: 110%;
+    max-width: 80%;
     margin: .3rem auto .1rem;
+}
+
+.section-c p {
+    font-size: larger;
 }
 
 .section-b label {
@@ -65,10 +79,23 @@ button:hover {
 .section-d ul {
     text-align: left;
     list-style-position: outside;
+    font-size: larger;
 }
 
 .section-d .row.row2 img, .section-d .row.row6 img, .section-d .row.row7 img {
-    margin: 10rem -10rem 0;
+    padding-top: 2.5em;
+}
+
+.section-d .row.row2 img {
+    padding-left: -3em;
+}
+
+.section-d .showcase-img {
+    max-width: 50%;
+}
+.section-d p {
+    text-align: center;
+    font-size: larger;
 }
 
 #button {
