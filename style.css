@@ -162,7 +162,6 @@ footer a {
 
 #status {
     width: 90%;
-    max-width: 500px;
     text-align: center;
     padding: 10px;
     margin: 0 auto;
@@ -196,7 +195,7 @@ footer a {
 #loader {
     display: none;
     position: relative;
-    max-width: 15%;
+    width: 15%;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -240,73 +239,6 @@ textarea:focus {
     font-family: Arial;
 }
 
-/*Zoom-out effect for screens with smaller resolution, anything below FULL-HD*/
- @media screen and (max-width: 1680px) and (max-height: 1050px){
-    body {
-        -moz-transform: scale(0.85, 0.85); /* Moz-browsers */
-        zoom: 0.85; /* Other non-webkit browsers */
-        zoom: 85%; /* Webkit browsers */
-    }
- }
-
- /*1600x900*/
- @media screen and (max-width: 1600px) and (max-height: 900px) {
-    body {
-        -moz-transform: scale(0.78, 0.78); /* Moz-browsers */
-        zoom: 0.78; /* Other non-webkit browsers */
-        zoom: 78%; /* Webkit browsers */
- }
-}
- /*1440x810*/
- @media screen and (max-width: 1440px) and (max-height: 810px) {
-    body {
-        -moz-transform: scale(0.72, 0.72); /* Moz-browsers */
-        zoom: 0.72; /* Other non-webkit browsers */
-        zoom: 72%; /* Webkit browsers */
- }
-}
-
- /*1400x900*/
- @media screen and (max-width: 1400px) and (max-height: 900px) {
-    body {
-        -moz-transform: scale(0.72, 0.72); /* Moz-browsers */
-        zoom: 0.72; /* Other non-webkit browsers */
-        zoom: 78%; /* Webkit browsers */
- }
-}
-
-/*1368x768*/
-@media screen and (max-width: 1368px) and (max-height: 768px) {
-    body {
-        -moz-transform: scale(0.73, 0.73); /* Moz-browsers */
-        zoom: 0.73; /* Other non-webkit browsers */
-        zoom: 73%; /* Webkit browsers */
- }
-}
-
-/*1024x768*/
-@media screen and (max-width: 1024px) and (max-height: 768px) {
-    body {
-        -moz-transform: scale(0.7, 0.7); /* Moz-browsers */
-        zoom: 0.7; /* Other non-webkit browsers */
-        zoom: 70%; /* Webkit browsers */
- }
-}
-
-/*1152x864*/
-@media screen and (max-width: 1152px) and (max-height: 864px) {
-    body {
-        -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
-        zoom: 0.8; /* Other non-webkit browsers */
-        zoom: 80%; /* Webkit browsers */
- }
-}
-
-/*1280x800*/
-@media screen and (max-width: 1280px) and (max-height: 800px) {
-    body {
-        -moz-transform: scale(0.75, 0.75); /* Moz-browsers */
-        zoom: 0.75; /* Other non-webkit browsers */
-        zoom: 75%; /* Webkit browsers */
- }
+#main-title {
+    font-weight: bold;
 }
