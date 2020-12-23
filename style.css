@@ -158,6 +158,7 @@ footer a {
 @media(min-width:100px) {
     .section-b .column2 {
         padding-left: 0em;
+        padding-top: 1.5em;
     }
     .section-b .column2 h5, .section-b .column2 p {
         text-align: left;
@@ -266,6 +267,3 @@ textarea:focus {
     font-family: Arial;
 }
 
-#main-title {
-    font-weight: bold;
-}
