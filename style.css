@@ -2,6 +2,8 @@
     scroll-behavior: smooth;
 }
 
+/*Sections*/
+
 .section {
     padding: 8rem 0 7;
     text-align: center;
@@ -68,22 +70,10 @@
     padding: 2rem 0 0;
 }
 
-button:hover {
-    background: #00ca46;
-}
-
-.section-showcase a:hover, .section-statement a:hover {
-    background: #00ca46;
-}
-
 .section-d ul {
     text-align: left;
     list-style-position: outside;
     font-size: larger;
-}
-
-.section-d .row.row2 img, .section-d .row.row6 img, .section-d .row.row7 img {
-    padding-top: 2.5em;
 }
 
 .section-d .row.row2 img {
@@ -93,10 +83,32 @@ button:hover {
 .section-d .showcase-img {
     max-width: 50%;
 }
+
 .section-d p {
     text-align: center;
     font-size: larger;
 }
+
+.section-showcase a:hover, .section-statement a:hover {
+    background: #00ca46;
+}
+
+
+.section-a.about-us, .section-a.priv-pol {
+    padding-top: 3em;
+}
+
+.section-a.priv-pol p {
+    font-size: larger;
+}
+
+
+/*To-top button*/
+
+button:hover {
+    background: #00ca46;
+}
+
 
 #button {
     display: inline-block;
@@ -137,6 +149,8 @@ button:hover {
     opacity: 1;
     visibility: visible;
 }
+
+/*Various*/
 
 #address-info {
     list-style-position: outside;
@@ -180,13 +194,11 @@ footer a {
     }
 }
 
-.section-a.about-us, .section-a.priv-pol {
-    padding-top: 3em;
+#main-title {
+    font-size: 2em;
 }
 
-.section-a.priv-pol p {
-    font-size: larger;
-}
+/*Contact info*/
 
 #status {
     width: 90%;
@@ -267,3 +279,42 @@ textarea:focus {
     font-family: Arial;
 }
 
+/*Index page pictures*/
+
+#extensive-reporting-index {
+    padding-top: 6em;
+}
+
+#effective-inventory-index {
+    padding-top: 3em;
+}
+
+#user-friendly-index {
+    padding-top: 3.5em;
+}
+
+/*Sub-page images*/
+
+.sub-page-image {
+    max-width: 50%;
+}
+
+#quick-info-sub {
+    padding-top: 3em;
+}
+
+#easy-data-collection-sub {
+    padding-top: 1em;
+}
+
+#integrated-database-sub {
+    padding-top: 2.5em;
+}
+
+#quality-assurance-sub {
+    padding-top: 2em;
+}
+
+#protecting-env {
+    padding-top: 2em;
+}
