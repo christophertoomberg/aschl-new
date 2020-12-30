@@ -24,7 +24,7 @@
 
 .section-a a {
     color: black;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .section-a nav {
@@ -317,4 +317,7 @@ textarea:focus {
 
 #protecting-env {
     padding-top: 2em;
+}
+#track-and-trace-sub {
+    max-width: 99%;
 }
