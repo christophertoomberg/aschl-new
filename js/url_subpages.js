@@ -1,1 +1,1 @@
-window.history.pushState({}, document.title, "/" + "");
+window.history.replaceState({}, document.title, "/" + "");
