@@ -198,6 +198,10 @@ footer a {
     font-size: 2em;
 }
 
+#mat-link {
+    text-decoration: underline;
+}
+
 /*Contact info*/
 
 #status {
