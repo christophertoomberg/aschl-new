@@ -102,6 +102,9 @@
     font-size: larger;
 }
 
+.row.data {
+    margin: 7em 0;
+}
 
 /*To-top button*/
 
