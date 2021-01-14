@@ -175,22 +175,10 @@ footer a {
     height: 50px;
     margin-top: -50px;
 }
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.section-a.about-us.contact {
-    flex: 1 0 auto;
-}
-
-footer {
-    flex-shrink: 0;
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 @media(min-width:100px) {

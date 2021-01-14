@@ -40,87 +40,91 @@
   <a href="index.html" id="button" class="show" style="text-decoration: none;"></a>
 
   <!--SECTION-B-->
-  <div class="section-a about-us contact">
-    <div class="container">
-      <div class="row">
-        <section class="section section-b">
-          <div class="container">
-            <div class="row" id="contact">
-              <div class="four column">
-                <h5>
-                  Aschl Management Systems
-                </h5>
-                <p>Please use the form and email us, or call as shown.</p>
-                <div class="row">
-                  <div class="six columns">
-                    <div id="status"></div>
 
-                    <!-- Error messages as red outlines of inputs-->
-                    <label id="eFullName" class="input-error"></label>
-                    <input placeholder="Full name*" class="u-full-width" type="text" id="full-name">
+  <div class="wrapper">
+    <div class="section-a about-us">
+      <div class="container">
+        <div class="row">
+          <section class="section section-b">
+            <div class="container">
+              <div class="row" id="contact">
+                <div class="four column">
+                  <h5>
+                    Aschl Management Systems
+                  </h5>
+                  <p>Please use the form and email us, or call as shown.</p>
+                  <div class="row">
+                    <div class="six columns">
+                      <div id="status"></div>
 
-                    <input placeholder="Job title" class="u-full-width" type="text" id="job-title">
+                      <!-- Error messages as red outlines of inputs-->
+                      <label id="eFullName" class="input-error"></label>
+                      <input placeholder="Full name*" class="u-full-width" type="text" id="full-name">
 
-                    <input placeholder="Organization" class="u-full-width" type="text" id="organization">
+                      <input placeholder="Job title" class="u-full-width" type="text" id="job-title">
 
-                    <label id="eEmail" class="input-error"></label>
-                    <input placeholder="Email*" class="u-full-width" type="email" id="client-email">
+                      <input placeholder="Organization" class="u-full-width" type="text" id="organization">
 
-                    <label id="ePhone" class="input-error"></label>
-                    <input placeholder="Phone*" class="u-full-width" type="number" id="phone">
+                      <label id="eEmail" class="input-error"></label>
+                      <input placeholder="Email*" class="u-full-width" type="email" id="client-email">
 
-                    <label id="eMessage" class="input-error"></label>
-                    <textarea placeholder="Message*" class="u-full-width" id="message"></textarea>
-                    <label class="example-send-yourself-copy">
-                      <input type="checkbox" id="send-copy">
-                      <span class="label-body">Send a copy to yourself</span>
-                    </label>
+                      <label id="ePhone" class="input-error"></label>
+                      <input placeholder="Phone*" class="u-full-width" type="number" id="phone">
 
-                    <button onclick="sendMail()" id="submit">Submit</button>
-                    <img src="images/loading.gif" alt="Loading spinner" id="loader">
-                  </div>
+                      <label id="eMessage" class="input-error"></label>
+                      <textarea placeholder="Message*" class="u-full-width" id="message"></textarea>
+                      <label class="example-send-yourself-copy">
+                        <input type="checkbox" id="send-copy">
+                        <span class="label-body">Send a copy to yourself</span>
+                      </label>
 
-                  <div class="six columns column2">
-                    <h5>Contact</h5>
-                    <p id="phone-info">
-                      <strong>
-                        Phone:
-                      </strong>
-                      <br>
-                      + <span class="numbers">
-                        43 (0)7248-65488
-                      </span>
-                    </p>
-                    <p id="email-info">
-                      <strong>
-                        Email:
-                      </strong>
-                      <br>
-                      info@aschl.com
-                    </p>
-                    <p id="address-info">
-                      <strong>
-                        Address:
-                      </strong>
-                      <br>
-                      <span class="numbers">A-4707</span>
-                      Schluesslberg, Thal 1, Austria
-                    </p>
+                      <button onclick="sendMail()" id="submit">Submit</button>
+                      <img src="images/loading.gif" alt="Loading spinner" id="loader">
+                    </div>
+
+                    <div class="six columns column2">
+                      <h5>Contact</h5>
+                      <p id="phone-info">
+                        <strong>
+                          Phone:
+                        </strong>
+                        <br>
+                        + <span class="numbers">
+                          43 (0)7248-65488
+                        </span>
+                      </p>
+                      <p id="email-info">
+                        <strong>
+                          Email:
+                        </strong>
+                        <br>
+                        info@aschl.com
+                      </p>
+                      <p id="address-info">
+                        <strong>
+                          Address:
+                        </strong>
+                        <br>
+                        <span class="numbers">A-4707</span>
+                        Schluesslberg, Thal 1, Austria
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
   </div>
-  </div>
   <hr>
+
+
 
   <footer style="text-align: center;">
     <p>A-<span class="numbers">4707</span> Schluesslberg, Thal <span class="numbers">1</span>, Austria; Phone: <span
         class="numbers">+43 (0)7248-65488</span></p>
-        <p>&copy; Copyright <span id="year"></span> Aschl Management Systems. All rights reserved.</p>
+    <p>&copy; Copyright <span id="year"></span> Aschl Management Systems. All rights reserved.</p>
 
   </footer>
 </body>
