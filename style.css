@@ -24,7 +24,7 @@
 
 .section-a a {
     color: black;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .section-a nav {
@@ -93,7 +93,6 @@
     background: #00ca46;
 }
 
-
 .section-a.about-us, .section-a.priv-pol {
     padding-top: 3em;
 }
@@ -103,10 +102,10 @@
 }
 
 .row.data {
-    margin: 7em 0;
+    margin: 5em 0;
 }
 
-.row.data.track{
+.row.data.track {
     margin-bottom: 0;
 }
 
@@ -115,7 +114,6 @@
 button:hover {
     background: #00ca46;
 }
-
 
 #button {
     display: inline-block;
@@ -178,6 +176,23 @@ footer a {
     margin-top: -50px;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-a.about-us.contact {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
 @media(min-width:100px) {
     .section-b .column2 {
         padding-left: 0em;
@@ -206,11 +221,13 @@ footer a {
 #main-title {
     font-size: 2em;
 }
+
 /*
 #mat-link {
     text-decoration: underline;
 }
 */
+
 /*Contact info*/
 
 #status {
@@ -331,6 +348,7 @@ textarea:focus {
 #protecting-env {
     padding-top: 2em;
 }
+
 #track-and-trace-sub {
     max-width: 99%;
 }
