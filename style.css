@@ -165,20 +165,13 @@ button:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-footer {
+footer.contact, footer.about {
     text-align: center;
     line-height: 0.1em;
-}
-
-footer a {
-    padding-bottom: 2em;
-    height: 50px;
-    margin-top: -50px;
-}
-.wrapper {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 @media(min-width:100px) {
