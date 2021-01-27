@@ -1,4 +1,4 @@
-const phrases = ['Software for a Better Environment', 'Recycling Management and Compliance', 'Organic Materials Processing', 'Compost Plant Management and Reporting', 'Agricultural Materials Recycling'];
+const phrases = ['Software for a Better Environment', 'Recycling Management and Compliance', 'Organic Materials Processing', 'Compost Plant Management and Reporting', 'Agricultural Materials Recycling','Waste Management, Collection and Reporting'];
 let phraseHolder = document.getElementById('typing');
 
 phraseHolder.textContent = '|';

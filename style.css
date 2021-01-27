@@ -102,6 +102,10 @@
     font-size: larger;
 }
 
+.section-a.solution {
+    margin-top: 9em;
+}
+
 .row.data {
     margin: 5em 0;
 }
@@ -166,13 +170,15 @@ button:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-footer.contact, footer.about {
-    text-align: center;
-    line-height: 0.1em;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+@media(min-width:1000px) {
+    footer.contact, footer.about {
+        text-align: center;
+        line-height: 0.1em;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 @media(min-width:100px) {
@@ -333,4 +339,8 @@ textarea:focus {
 
 #track-and-trace-sub {
     max-width: 99%;
+}
+
+.row.downloads {
+    text-decoration: underline;
 }
