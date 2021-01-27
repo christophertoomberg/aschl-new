@@ -9,6 +9,7 @@
     text-align: center;
 }
 
+
 .section-heading, .section-description {
     margin-bottom: 1.2rem;
 }
@@ -106,7 +107,7 @@
 }
 
 .row.data.track {
-    margin-bottom: 0;
+    margin-bottom: 5em 0;
 }
 
 /*To-top button*/
