@@ -9,7 +9,6 @@
     text-align: center;
 }
 
-
 .section-heading, .section-description {
     margin-bottom: 1.2rem;
 }
@@ -103,7 +102,13 @@
 }
 
 .section-a.solution {
-    margin-top: 9em;
+    margin-top: 3em;
+}
+
+@media(min-width:1000px) {
+    .section-a.solution {
+        margin-top: 9em;
+    }
 }
 
 .row.data {
@@ -176,7 +181,7 @@ button:hover {
         line-height: 0.1em;
         position: fixed;
         left: 0;
-        bottom: 0;
+        bottom: 40px;
         width: 100%;
     }
 }
@@ -343,4 +348,16 @@ textarea:focus {
 
 .row.downloads {
     text-decoration: underline;
+}
+
+.item-container {
+    margin: 2.5em 2.5em;
+}
+
+#top-buttons {
+    margin: 1em 0;
+}
+
+.section-a.solution div.row {
+    margin: 2em 0;
 }
