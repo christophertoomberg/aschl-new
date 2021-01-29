@@ -7,6 +7,7 @@ async function sendMail() {
     const sendCopy = document.getElementById('send-copy');
     const jobTitle = document.getElementById('job-title');
     const organization = document.getElementById('organization');
+    const receiveBrochure = document.getElementById('receive-brochure');
 
     let button = document.getElementById('submit');
     let loader = document.getElementById('loader');
@@ -40,7 +41,11 @@ async function sendMail() {
                 'Content-Type': 'application/json'
             },
             // If job title and organization aren't empty send their value.
-            body: JSON.stringify({ fullName: fullName.value.trim(), clientEmail: clientEmail.value.trim(), phone: phone.value.trim(), message: message.value.trim(), sendCopy: sendCopy.checked, jobTitle: jobTitle.value.trim(), organization: organization.value.trim()})
+            body: JSON.stringify({
+                fullName: fullName.value.trim(), clientEmail: clientEmail.value.trim(),
+                phone: phone.value.trim(), message: message.value.trim(), sendCopy: sendCopy.checked,
+                jobTitle: jobTitle.value.trim(), organization: organization.value.trim(), receiveBrochure: receiveBrochure.checked
+            })
         });
 
         if (response.status === 200) {
@@ -57,6 +62,7 @@ async function sendMail() {
             jobTitle.value = '';
             organization.value = '';
             sendCopy.checked = false;
+            receiveBrochure.checked = false;
 
             status.classList.add('success');
             status.innerText = 'Thank you for contacting us!'
@@ -70,7 +76,7 @@ async function sendMail() {
             // In case of an error, we get a response back.
             const data = await response.json();
             console.log(data)
-            
+
             // Display errors in placeholders.
             data.errors.forEach(errorMessage => {
                 const prm = errorMessage.param;
@@ -101,5 +107,6 @@ async function sendMail() {
         jobTitle.value = '';
         organization.value = '';
         sendCopy.checked = false;
+        receiveBrochure.checked = false;
     }
 }
