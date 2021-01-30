@@ -354,6 +354,10 @@ textarea:focus {
     margin: 2.5em 2.5em;
 }
 
+#compost-triangle {
+    margin-top: 1.2em;
+}
+
 #top-buttons {
     margin: 1em 0;
 }
