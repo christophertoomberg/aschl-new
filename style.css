@@ -354,14 +354,19 @@ textarea:focus {
     margin: 2.5em 2.5em;
 }
 
-#compost-triangle {
-    margin-top: 1.2em;
-}
-
 #top-buttons {
     margin: 1em 0;
 }
 
 .section-a.solution div.row {
     margin: 2em 0;
+}
+
+#compost-icon {
+    height: 40px;
+    margin-top: -15px;
+}
+
+#compost-text {
+    margin-top: -10px;
 }
