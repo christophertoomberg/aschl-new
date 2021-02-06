@@ -175,7 +175,7 @@ button:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-@media(min-width:1000px) {
+@media(min-width:700px) {
     footer.contact, footer.about {
         text-align: center;
         line-height: 0.1em;
@@ -369,4 +369,13 @@ textarea:focus {
 
 #compost-text {
     margin-top: -10px;
+}
+
+label.receive-a-brochure{
+    display: block;
+    margin-left: 1.4em;
+}
+input#receive-brochure {
+    float: left;
+    margin-left: -20px;
 }
